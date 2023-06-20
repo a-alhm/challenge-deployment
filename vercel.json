@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "server/prodServer.js",
+            "src": "server/devServer.js",
             "use": "@now/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server/prodServer.js"
+            "dest": "server/devServer.js"
         }
     ]
 }
