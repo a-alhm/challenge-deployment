@@ -19,7 +19,8 @@
     "watch:client": "webpack --mode development --watch",
     "start:server": "nodemon ./server/devServer.js",
     "start:dev": "concurrently \"npm run watch:client\" \"npm run start:server\"",
-    "prettier": "prettier --write \"**/*.{js,vue}\""
+    "prettier": "prettier --write \"**/*.{js,vue}\"",
+    "start": "node ./server/prodServer.js"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

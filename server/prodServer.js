@@ -1,5 +1,9 @@
 const app = require('./app')
 const middlewares = require('./config/middlewares').prod
+const User = require('./models/userModel')
+const Product = require('./models/productModel')
+const sequelize = require('./config/database')
+const bcrypt = require('bcrypt')
 
 middlewares.forEach((m) => {
   app.use(m.shift(), m.shift())
@@ -7,7 +11,9 @@ middlewares.forEach((m) => {
 
 // seeding
 sequelize.sync().then(() => {
-
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`)
+  })
   const products = [
     {
       title: 'سماعات apple AirPods Max  الاصدار الجديد',
