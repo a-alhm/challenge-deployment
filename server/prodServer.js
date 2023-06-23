@@ -11,8 +11,8 @@ middlewares.forEach((m) => {
 
 // seeding
 sequelize.sync().then(() => {
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
+  app.listen(443, () => {
+    console.log(`Server is running on port ${443}`)
   })
   const products = [
     {
