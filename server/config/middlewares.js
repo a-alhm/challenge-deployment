@@ -1,5 +1,5 @@
 const path = require('path')
-const connectLiveReload = require('connect-livereload')
+// const connectLiveReload = require('connect-livereload')
 const express = require('express')
 
 const userController = require('../controllers/userController')
@@ -10,7 +10,7 @@ module.exports = {
   dev: [
     ['', express.json()],
     ['', express.urlencoded({ extended: true })],
-    ['', connectLiveReload()],
+    // ['', connectLiveReload()],
     ['', express.static(path.join(__dirname, '../../client/public/'))],
     ['/api', userController],
     ['/api', productController],
