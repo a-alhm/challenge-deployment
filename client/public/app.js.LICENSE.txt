@@ -1,0 +1,13 @@
+/*!
+ * vuex v4.1.0
+ * (c) 2022 Evan You
+ * @license MIT
+ */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/**
+  * vee-validate v4.10.0
+  * (c) 2023 Abdelrahman Awad
+  * @license MIT
+  */

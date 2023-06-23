@@ -4,6 +4,7 @@
   "description": "Salla Vue Challange",
   "author": "salla",
   "license": "MIT",
+  "main": "server/prodServer.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/SallaChallenges/Vue-Challange"
